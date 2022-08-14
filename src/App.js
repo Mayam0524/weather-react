@@ -1,9 +1,9 @@
 import React from "react";
-
 import Header from "./Header";
 import Section from "./Section";
 import Other from "./Other";
 import Forecast from "./Forecast";
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 
 function App() {

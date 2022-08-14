@@ -166,3 +166,11 @@ input {
 small {
   margin-left: 20px;
 }
+
+.SourceCode {
+  color: #aaaeb3;
+}
+
+.Source-link {
+  color: #42a5f5;
+}

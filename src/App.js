@@ -3,6 +3,7 @@ import Header from "./Header";
 import Section from "./Section";
 import Other from "./Other";
 import Forecast from "./Forecast";
+import OpenSource from "./OpenSource";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 
@@ -37,6 +38,7 @@ function App() {
           </div>
         </div>
       </div>
+      <OpenSource />
     </div>
   );
 }

@@ -37,7 +37,7 @@ function App() {
             <Forecast date="Sat" maxTemp="19" minTemp="18" />
           </div>
         </div>
-      </div>
+      </div><br />
       <OpenSource />
     </div>
   );

@@ -1,38 +1,168 @@
-.App {
+
+body {
+  background-color: aliceblue;
+  max-width: 600px;
+  padding: 10px;
+  margin: 30px auto;
+  border: 1px solid #888c8d;
+  border-radius: 20px;
+}
+
+.Header {
+  text-align: right;
+  background-color: #d9edfd;
+  color: #42a5f5;
+  margin: 0 auto;
+  display: block;
+  padding: 15px;
+  border-radius: 20px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+button {
+  margin: 10px;
+  padding: 8px;
+  font-size: 16px;
+  background-color: #42a5f5;
+  border-color: #42a5f5;
+  border-radius: 50px;
+  box-shadow: #aaaeb3 0px 6px p6x 0;
+}
+
+button:hover {
+  transition: all 200ms ease;
+  cursor: pointer;
+  background: #aaaeb3;
+  color: aliceblue;
+}
+
+.search {
+  color: #aaaeb3;
+}
+
+input {
+  background-color: transparent;
+  border-color: #42a5f5;
+  border-radius: 70px;
+  padding: 8px;
+  font-size: 18px;
+  box-shadow: #aaaeb3 0px 6px 6px 0;
+}
+
+#submit {
+  padding: 8px;
+  font-size: large;
+  border-radius: 50px;
+  border: #42a5f5;
+  background-color: #42a5f5;
+  box-shadow: #aaaeb3 0px 6px 6px 0;
+}
+
+#submit:hover {
+  transition: all 200ms ease;
+  cursor: pointer;
+  background: #aaaeb3;
+  border: #42a5f5;
+}
+
+.Section {
+  color: #aaaeb3;
+  line-height: 40px;
+  padding-left: 20px;
+  font-weight: 500;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.city {
+  font-size: 45px;
+}
+
+.date,
+.time {
+  font-size: 20px;
+}
+
+#sky {
+  font-size: 20px;
+}
+
+.temp {
+  display: block;
   text-align: center;
+  font-size: 60px;
+  background-color: #d9edfd;
+  padding: 45px 20px 45px 20px;
+  border-radius: 20px;
+  position: relative;
+  top: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.current-temp {
+  font-size: 50px;
+  color: #aaaeb3;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#current-celsius:hover {
+  transition: all 200ms ease;
+  color: aliceblue;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+#current-fahrenheit:hover {
+  transition: all 200ms ease;
+  color: aliceblue;
 }
 
-.App-link {
-  color: #61dafb;
+.Other {
+  text-align: right;
+  color: #aaaeb3;
+  font-size: 15px;
+  position: relative;
+  right: 30px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Forecast {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.col-2 {
+  text-align: center;
+  line-height: 40px;
+  color: #aaaeb3;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.next-day {
+  background-color: #d9edfd;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.next-day:hover {
+  transition: all 200ms ease;
+  background-color: #aaaeb3;
+  color: #d9edfd;
+}
+
+.weather-forecast-date {
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.weather-forecast-temperatures {
+  font-size: 18px;
+}
+
+.weather-forecast-temperature-max {
+  font-weight: bold;
+}
+
+.weather-forecast-temperature-min {
+  opacity: 0.8;
+}
+
+small {
+  margin-left: 20px;
 }

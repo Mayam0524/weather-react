@@ -3,6 +3,7 @@ import React from "react";
 
 export default function Forecast(props) {
   return (
+  
     <div className="Forecast" class="d-none d-sm-block">
       <div class="weather-forecast-date">{props.date}</div>
       <span>

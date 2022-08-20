@@ -1,6 +1,8 @@
+import axios from "axios";
 import React from "react";
 
 export default function Section(props) {
+  
   return (
     <div className="Section">
       <p>

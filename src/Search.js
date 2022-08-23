@@ -1,6 +1,8 @@
 import React, { useState } from "react";
-
+import FormattedDate from "./FormattedDate";
+import FormattedTime from "./FormattedTime";
 import axios from "axios";
+import "./App.css"
 
 export default function Search() {
   const [weatherData, setWeatherData] = useState({ ready: false });
@@ -10,8 +12,10 @@ export default function Search() {
       ready: true,
       temperature: response.data.main.temp,
       city: response.data.name,
+      date: new Date(response.data.dt * 1000),
+      time: new Date(response.data.dt * 1000),
       description: response.data.weather[0].description,
-      iconUrl: "https://openweathermap.org/img/wn/01d@2x.png",
+      iconUrl: "https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png",
       feels: response.data.main.feels_like,
       wind: response.data.wind.speed,
       humidity: response.data.main.humidity
@@ -40,13 +44,20 @@ export default function Search() {
           <div class="container">
             <div class="row">
               <div class="col-6">
-                <span class="city">{weatherData.city}</span>
-                <br />
-                <span class="date">Day, Month Date, Year</span>
-                <br />
-                <span class="time">00:00</span>
-                <br />
-                <span id="sky">{weatherData.description}</span>
+                <ul>
+                  <li class="city">
+                    {weatherData.city}
+                  </li>
+                  <li class="date">
+                    <FormattedDate date={weatherData.date} />
+                  </li>
+                  <li  class="time">
+                    <FormattedTime time={weatherData.time} />
+                  </li>
+                  <li id="sky">
+                    {weatherData.description}
+                  </li>
+                </ul>
               </div>
               <div class="col-6">
                 <span class="temp">
@@ -62,7 +73,7 @@ export default function Search() {
             </div>
           </div>
         </p>
-      </div><br />
+      </div>
       <div className="Other">
       <p>
         <span>Feels like: </span>

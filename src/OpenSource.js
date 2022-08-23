@@ -8,9 +8,9 @@ export default function OpenSource() {
           href="https://github.com/Mayam0524/weather-react"
           className="Source-link"
         >
-          Open-source-code
+          Open-source-coded
         </a>
-        by yuna
+        <span> by Yuna</span>
       </p>
     </div>
   );

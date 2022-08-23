@@ -1,6 +1,5 @@
 import React from "react";
-import Header from "./Header";
-import Other from "./Other";
+import Search from "./Search";
 import WeekForecast from "./WeekForecast";
 import OpenSource from "./OpenSource";
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -9,8 +8,7 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <Header />
-      <Other />
+      <Search defaultCity="Tokyo"/>
       <hr />
       <br />
       <WeekForecast />

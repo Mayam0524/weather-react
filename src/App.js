@@ -1,5 +1,5 @@
 import React from "react";
-import Search from "./Search";
+import Weather from "./Weather";
 import WeekForecast from "./WeekForecast";
 import OpenSource from "./OpenSource";
 import './App.css';
@@ -7,7 +7,7 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <Search defaultCity="Tokyo"/>
+      <Weather defaultCity="Tokyo"/>
       <hr />
       <br />
       <WeekForecast />

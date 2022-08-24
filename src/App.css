@@ -1,5 +1,7 @@
+@import url('https: //fonts.googleapis.com/css2?family=Sawarabi+Mincho&display=swap');
 
-body {
+
+.App {
   background-color: aliceblue;
   max-width: 600px;
   padding: 10px;
@@ -8,7 +10,7 @@ body {
   border-radius: 20px;
 }
 
-form{
+form {
   text-align: right;
   background-color: #d9edfd;
   color: #42a5f5;
@@ -69,8 +71,8 @@ input {
 .Section {
   color: #aaaeb3;
   line-height: 40px;
-  font-weight: 500;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: bolder;
+  font-family: 'Sawarabi Mincho', serif;
 }
 
 li {
@@ -136,7 +138,7 @@ li {
   text-align: center;
   line-height: 40px;
   color: #aaaeb3;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Sawarabi Mincho', serif;
 }
 
 .next-day {

@@ -6,7 +6,8 @@ export default function FormattedDate(props) {
     let day = days[props.date.getDay()]
     let month = months[props.date.getMonth()]
     let date = props.date.getDate()
+    let year = props.date.getFullYear()
     return (
-        <div>{day}, {month} {date}</div>
+        <div>{day}, {month} {date}, {year}</div>
     )
 }
